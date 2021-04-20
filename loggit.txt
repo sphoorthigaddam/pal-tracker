@@ -1,0 +1,17 @@
+* 307c6b2 (tag: rolling-upgrade-solution, origin/solution) rolling update
+* 5e66cdf (tag: scaling-availability-solution) harden cloud foundry configuration for production
+* 0297055 (tag: scaling-availability-start) Add production tuning parameters to manifest, autoscaling scripts
+* cd0aaa3 (tag: actuator-solution) Add actuator dependency and configuration
+* a6305cf (tag: actuator-start) Add instrumentation for pal-tracker failure
+* 38decca (tag: jdbc-solution) Persist time entries in database
+* 00974ae (tag: jdbc-start) Add tests for persisting time entries in database
+* 087905f (tag: migration-solution) Add migrations and pipeline changes
+* c5a3bdf (tag: migration-start) Add task for migrating databases
+* 18e4e96 (tag: mvc-solution) Add TimeEntry MVC in memory
+* bc09138 (tag: mvc-start) Add tests and inmemory repo implementation for MVC lab
+* 5929ac7 (tag: pipeline-solution) Update route
+* 25bc37f (tag: pipeline-start) Add deployment pipeline
+* 3fc69ee (tag: configuration-solution) Add manifest file for configuration and deployment to PCF
+* 02e3279 (tag: configuration-start) Add tests for configuration lab
+* 5457bea (tag: spring-boot-solution) Simple Spring Boot app
+* 0ac8b7f (HEAD -> main, tag: spring-boot-start, origin/main) Initial commit
