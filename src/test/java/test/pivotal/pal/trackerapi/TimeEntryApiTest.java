@@ -102,7 +102,7 @@ public class TimeEntryApiTest {
     }
 
     @Test
-    public void testDelete() throws Exception {
+    public void testDelete() {
         Long id = createTimeEntry();
 
 
