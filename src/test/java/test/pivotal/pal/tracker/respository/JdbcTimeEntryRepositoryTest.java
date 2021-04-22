@@ -3,7 +3,7 @@ package test.pivotal.pal.tracker.respository;
 
 import com.mysql.cj.jdbc.MysqlDataSource;
 import io.pivotal.pal.tracker.repository.JdbcTimeEntryRepository;
-import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.models.TimeEntry;
 import io.pivotal.pal.tracker.repository.TimeEntryRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

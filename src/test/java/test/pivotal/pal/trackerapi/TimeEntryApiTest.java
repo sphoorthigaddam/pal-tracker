@@ -3,7 +3,7 @@ package test.pivotal.pal.trackerapi;
 import com.jayway.jsonpath.DocumentContext;
 import com.mysql.cj.jdbc.MysqlDataSource;
 import io.pivotal.pal.tracker.PalTrackerApplication;
-import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.models.TimeEntry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

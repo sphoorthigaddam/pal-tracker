@@ -1,11 +1,8 @@
 package io.pivotal.pal.tracker.repository;
 
-import com.mysql.cj.jdbc.MysqlDataSource;
-
 import javax.sql.DataSource;
 
-import io.pivotal.pal.tracker.TimeEntry;
-import io.pivotal.pal.tracker.repository.TimeEntryRepository;
+import io.pivotal.pal.tracker.models.TimeEntry;
 import org.springframework.jdbc.core.ResultSetExtractor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;

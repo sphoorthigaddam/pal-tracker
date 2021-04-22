@@ -1,6 +1,6 @@
 package test.pivotal.pal.tracker.controller;
 
-import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.models.TimeEntry;
 import io.pivotal.pal.tracker.controller.TimeEntryController;
 import io.pivotal.pal.tracker.repository.TimeEntryRepository;
 import org.junit.jupiter.api.BeforeEach;

@@ -1,4 +1,4 @@
-package io.pivotal.pal.tracker;
+package io.pivotal.pal.tracker.models;
 
 import java.time.LocalDate;
 import java.util.Objects;

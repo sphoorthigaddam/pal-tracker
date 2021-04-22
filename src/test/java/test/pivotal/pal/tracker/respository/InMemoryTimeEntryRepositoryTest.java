@@ -1,7 +1,7 @@
 package test.pivotal.pal.tracker.respository;
 
 import io.pivotal.pal.tracker.repository.InMemoryTimeEntryRepository;
-import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.models.TimeEntry;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
