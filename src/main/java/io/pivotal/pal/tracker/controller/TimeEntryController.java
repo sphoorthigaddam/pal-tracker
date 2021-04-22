@@ -1,5 +1,7 @@
-package io.pivotal.pal.tracker;
+package io.pivotal.pal.tracker.controller;
 
+import io.pivotal.pal.tracker.TimeEntry;
+import io.pivotal.pal.tracker.repository.TimeEntryRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
