@@ -1,0 +1,95 @@
+2021-04-22T17:57:18.34+0000 [CELL/0] OUT Starting health monitoring of container
+
+ 2021-04-22T17:57:25.09+0000 [CELL/0] OUT Container became healthy
+
+ docker run -i -t --rm -e DURATION=300 -e NUM_USERS=10 -e REQUESTS_PER_SECOND=5 -e URL=http://pal-tracker-sgaddam5.apps.evans.pal.pivotal.io  pivotaleducation/loadtest
+
+
+curl -v -XPOST -H "Content-Length:0"  http://pal-tracker-sgaddam5.apps.evans.pal.pivotal.io/actuator/palTrackerFailure
+
+ docker run -i -t --rm -e DURATION=300 -e NUM_USERS=100 -e REQUESTS_PER_SECOND=5 -e URL=http://pal-tracker-sgaddam5.apps.evans.pal.pivotal.io  pivotaleducation/loadtest
+
+docker run -i -t --rm -e DURATION=300 -e NUM_USERS=100 -e REQUESTS_PER_SECOND=50 -e URL=http://pal-tracker-sgaddam5.apps.evans.pal.pivotal.io  pivotaleducation/loadtest
+   2021-04-23T09:39:29.07+0000 [CELL/0] OUT Starting health monitoring of container
+
+   2021-04-23T09:39:35.77+0000 [CELL/0] OUT Container became healthy
+
+Every 2.0s: cf autoscaling-events pal-tracker                              ip-172-31-93-97: Fri Apr 23 10:05:42 2021
+
+Presenting autoscaler events for app pal-tracker in org sgaddam5-ford-org / space sandbox as sgaddam5-ford
+OK
+Time                   Description
+2021-04-23T10:05:35Z   Scaled up from 3 to 4 instances. Current HTTP Throughput of 17.47/s/instance is above upper t
+hreshold of 10.00/s/instance.
+2021-04-23T10:02:00Z   Enabled autoscaling.
+==========
+
+Every 2.0s: cf autoscaling-events pal-tracker                              ip-172-31-93-97: Fri Apr 23 10:06:19 2021
+
+Presenting autoscaler events for app pal-tracker in org sgaddam5-ford-org / space sandbox as sgaddam5-ford
+OK
+Time                   Description
+2021-04-23T10:06:11Z   Scaled up from 4 to 5 instances. Current HTTP Throughput of 12.74/s/instance is above upper t
+hreshold of 10.00/s/instance.
+2021-04-23T10:05:35Z   Scaled up from 3 to 4 instances. Current HTTP Throughput of 17.47/s/instance is above upper t
+hreshold of 10.00/s/instance.
+2021-04-23T10:02:00Z   Enabled autoscaling.
+
+==============================
+
+Every 2.0s: cf autoscaling-events pal-tracker                              ip-172-31-93-97: Fri Apr 23 10:07:52 2021
+
+Presenting autoscaler events for app pal-tracker in org sgaddam5-ford-org / space sandbox as sgaddam5-ford
+OK
+Time                   Description
+2021-04-23T10:07:25Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.00/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:06:47Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.09/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:06:11Z   Scaled up from 4 to 5 instances. Current HTTP Throughput of 12.74/s/instance is above upper t
+hreshold of 10.00/s/instance.
+2021-04-23T10:05:35Z   Scaled up from 3 to 4 instances. Current HTTP Throughput of 17.47/s/instance is above upper t
+hreshold of 10.00/s/instance.
+2021-04-23T10:02:00Z   Enabled autoscaling.
+==============================================
+
+
+Every 2.0s: cf autoscaling-events pal-tracker                              ip-172-31-93-97: Fri Apr 23 10:11:02 2021
+
+Presenting autoscaler events for app pal-tracker in org sgaddam5-ford-org / space sandbox as sgaddam5-ford
+OK
+Time                   Description
+2021-04-23T10:10:51Z   Scaled down from 5 to 4 instances. All metrics are currently below minimum thresholds.
+2021-04-23T10:10:16Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.02/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:09:43Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.17/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:09:10Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.06/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:08:35Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.10/s/instance is
+ above upper threshold of 10.00/s/instance.
+2021-04-23T10:07:59Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.11/s/instance is
+ above upper threshold of 10.00/s/instanc
+
+
+ ==========================================
+ Every 2.0s: cf autoscaling-events pal-tracker                              ip-172-31-93-97: Fri Apr 23 10:11:45 2021
+
+ Presenting autoscaler events for app pal-tracker in org sgaddam5-ford-org / space sandbox as sgaddam5-ford
+ OK
+ Time                   Description
+ 2021-04-23T10:11:27Z   Scaled down from 4 to 3 instances. All metrics are currently below minimum thresholds.
+ 2021-04-23T10:10:51Z   Scaled down from 5 to 4 instances. All metrics are currently below minimum thresholds.
+ 2021-04-23T10:10:16Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.02/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:09:43Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.17/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:09:10Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.06/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:08:35Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.10/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:07:59Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.11/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:07:25Z   Can not scale up. At max limit of 5 instances. Current HTTP Throughput of 10.00/s/instance is
+  above upper threshold of 10.00/s/instance.
+ 2021-04-23T10:06:47Z   Can not
